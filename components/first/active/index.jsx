@@ -49,7 +49,7 @@ const Active = ({ isActive, setIsActive }) =>
     className={`flex items-center justify-center w-56 font-arabic rounded-none ${isActive ? 'bg-amber-600 text-white' : 'text-white bg-transparent'}`}
   >
     <Image src={callcenter} alt="Happy Person" objectFit="cover" className="w-28 mr-2" />
-    مخدامش مع
+  خدام مع
   </button>
   
   <button
