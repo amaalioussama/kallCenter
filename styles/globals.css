@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:'arabic' ;
+    src: url('../static/fonts/AGCRegular.ttf');
+}
+.placeholder-black::placeholder {
+    color: black;
+  }
+  
+:root {
+}
