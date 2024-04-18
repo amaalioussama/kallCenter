@@ -11,26 +11,38 @@
   }
   #all8{
 
-    height: 60rem;
+    height: 50rem;
   }
   #persondiv {
-    margin-top: 13rem; /* Adjust margin top for image */
+    margin-top: 8rem; 
     margin-left: 1rem;
+    height: 886px;
   }
 
  
 
   #buttdiv {
-    margin-top: 30rem;
+    width: 50rem;
+    margin-top: 15rem;
     margin-bottom: 20rem;
     margin-right: 29rem; 
     margin-left:-18rem;
     width: fit-content;
   }
 
+  #btns{
+    margin-top: 8rem;
+    margin-left: 260px;
+    width:25rem;
+
+  }
+  #im{
+    width: 5rem;
+  }
+
 #h1txt{
   margin-top: 15rem;
-  margin-left: -75rem;
+  margin-left: -78rem;
 margin-bottom: 25rem;
 font-size: x-large;
 

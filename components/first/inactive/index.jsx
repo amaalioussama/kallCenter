@@ -45,20 +45,22 @@
       </div>
   <div id="buttdiv" >
 
-  <div  className="inline-flex rounded-lg border-solid border-2 h-10 ml-60 border-amber-600 mt-20">
+  <div id="btns" className="inline-flex rounded-lg border-solid border-2 h-10 ml-60 border-amber-600 mt-20">
     <button
+      id="btn"
       onClick={() => setIsActive(true)}
       className={`flex items-center justify-center w-56 font-arabic rounded-none ${isActive ? 'bg-amber-600 text-white' : 'text-white bg-transparent'}`}
     >
-      <Image src={callcenter} alt="Happy Person" objectFit="cover" className="w-28 mr-2" />
+      <Image id="im" src={callcenter} alt="Happy Person" objectFit="cover" className="w-28 mr-2" />
     خدام مع
     </button>
     
     <button
+      id="btn1"
       onClick={() => setIsActive(false)}
       className={`flex items-center justify-center w-56 font-arabic rounded-none ${!isActive ? 'bg-amber-600 text-white' : 'text-white bg-transparent'}`}
     >
-      <Image src={callcenter} alt="Happy Person" objectFit="cover" className="w-28 mr-2" />
+      <Image id="im" src={callcenter} alt="Happy Person" objectFit="cover" className="w-28 mr-2" />
       مخدامش مع
     </button>
   </div>
