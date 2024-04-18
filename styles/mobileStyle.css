@@ -1,0 +1,296 @@
+
+
+
+@media only screen and (max-width: 650px) {
+
+  #butnav{
+    margin-right: 1rem;
+    height: 3rem;
+    margin-bottom: 4px;
+    width: 7rem;
+  }
+  #all8{
+
+    height: 60rem;
+  }
+  #persondiv {
+    margin-top: 13rem; /* Adjust margin top for image */
+    margin-left: 1rem;
+  }
+
+ 
+
+  #buttdiv {
+    margin-top: 30rem;
+    margin-bottom: 20rem;
+    margin-right: 29rem; 
+    margin-left:-18rem;
+    width: fit-content;
+  }
+
+#h1txt{
+  margin-top: 15rem;
+  margin-left: -75rem;
+margin-bottom: 25rem;
+font-size: x-large;
+
+}
+
+
+
+    #soufrance{
+   font-size:xx-large;
+   margin-top: 1rem;
+
+    }
+    #all1{
+
+      display: flex;
+      margin-top: 0%;
+    }
+    #rounded1{
+      
+      margin-left: auto;
+      height:6rem;
+      border-radius: 99%;
+      width:6rem;
+      font-size:x-small;
+
+    }
+   
+    #all1{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0%;
+
+    }
+    #solution1{
+      display: flex;
+
+    }
+    #solution2{
+      font-size:x-large;
+    }
+
+    #solution3{
+      margin-top: 10px;
+      width:8rem ;
+      height: 2rem;
+    }
+    
+    #solution4{
+      margin-top: 10px;
+      width:8rem ;
+      height: 8rem;
+    }
+    #rounded11{
+
+      margin-left: auto;
+      height:6rem;
+      border-radius: 99%;
+      width:7rem;
+      font-size:x-small;
+    }
+    #all4{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 2rem;
+   margin-left: 2rem;
+    }
+    
+    #casque{
+      width:20rem ;
+    }
+    #contains{
+     margin-right: 2rem;
+  flex-direction: column-reverse; 
+      margin-top: 20px;
+    }
+    #tit{
+      font-size:x-large;
+      
+    }
+    #par{
+      font-size:x-small;
+    }
+ #soufrance1{
+  font-size:xx-large;
+  margin-top: 2rem;
+  margin-left: 2rem;
+ }
+ #tit1{
+  font-size:x-large;
+  margin-left: 2rem;
+ }
+#par1{
+  font-size:x-small;
+  margin-left: 2rem;
+}
+#all2{
+  height: 50rem;
+}
+#beftit{
+  margin-top: -2rem;
+  margin-left: 10rem;
+  margin-bottom: 12rem;
+}
+#all3{
+ height: 15rem;
+
+}
+#countersContainer {
+  flex-direction: column;
+  align-items: center;
+}
+
+#commandeCounter,
+#diagramContainer,
+#clientsCounter {
+  margin-bottom: 2rem;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+
+#tit2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  margin-left: 11rem;
+
+}
+#tit3 {
+  margin-left: 26rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+
+}
+#par1 {
+  margin-top: 5rem;
+  margin-right: 8rem;
+  font-size: x-large;
+  margin-left: 0; 
+}
+#par2 {
+  margin-top: 5rem;
+  margin-left: 26rem;
+  font-size: x-large;
+
+}
+#rem{
+  margin-left:14rem ;
+}
+#rem2{
+margin-left: 3rem;
+}
+
+#stat1{
+  height: 12rem;
+  width: 10rem;
+  margin-right: 3rem;
+}
+#tit4{
+
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    margin-left: -20rem;
+  
+}
+#tit5{
+
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  margin-left: 10rem;
+
+}
+#par2 {
+  margin-top: 5rem;
+  margin-right: 16rem;
+  font-size: x-large;
+  margin-left: 0; 
+}
+#par3{
+  display: flex;
+}
+ #par6{
+ margin-top: 2rem;
+  margin-right: 23rem;
+  font-size: x-large;
+
+ }
+ #par4{
+  margin-top:-120px;
+  margin-left: 32rem;
+  margin-right: 23rem;
+  font-size: x-large;
+
+ }
+ #fontt{
+  font-size: small;
+  margin-left: 5rem;
+ }
+#startup{
+  height: 4rem;
+  width: 8rem;
+}
+#ca{
+  margin-top: 10px;
+  height: 2rem;
+  width: 13rem;
+}
+#tit11{
+  font-size: 2rem;
+  display: block;
+}
+
+#form2{
+
+  margin-right:7rem ;
+}
+#forms1  {
+  display: block;
+
+  }
+ 
+  #inp{
+    margin-top: 1rem;
+    margin-left: 14rem;
+    width: 16rem;
+  }
+  #into1{
+margin-top: 8px;
+ 
+  }
+  #inp1{
+    margin-top: 1rem;
+    margin-left: 14rem;
+    width: 16rem;
+  }
+  #inp6{
+    margin-top: -4rem;
+    margin-left: 14rem;
+    width: 16rem;
+  }
+  #inp2{
+    margin-top: 1rem;
+    margin-left: 14rem;
+    width: 16rem;
+  }
+  #into2{
+    margin-top: -4px;
+     
+      }
+ #irsal{
+  margin-left: 19rem;
+  width: 7rem;
+
+ }  
+
+}

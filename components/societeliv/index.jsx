@@ -11,7 +11,7 @@ const Sclivraison = () => {
   return (
     <div className="bg-white items-center justify-center text-white relative overflow-hidden shadow-2xl">  
       <div className="mt-9">
-        <h1 className="text-center text-5xl font-arabic mt-9 text-firstbule">شركات التوصيل الشريكة</h1>
+        <h1 id="tit" className="text-center text-5xl font-arabic mt-9 text-firstbule">شركات التوصيل الشريكة</h1>
       </div>
       <div className="mt-12 flex">
         <Swiper
@@ -21,20 +21,20 @@ const Sclivraison = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><Image src={startup} className="h-14 w-32"alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" /></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
+          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
+             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" /></SwiperSlide>
 
         </Swiper>
       </div>

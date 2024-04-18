@@ -22,7 +22,8 @@ export default function Home() {
       <Navbar />
 
       {isActive ? <Active isActive={isActive} setIsActive={setIsActive} />   : <Inactive isActive={isActive} setIsActive={setIsActive} />}
-      {isActive ? <Cardactive /> : <InCardactive />}
+      {isActive ? <Cardactive />:  <InCardactive />
+      }
       <Workmethode />
       <Wrokwith/>
       <Colab />

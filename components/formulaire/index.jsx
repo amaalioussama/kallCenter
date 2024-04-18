@@ -41,15 +41,16 @@ const Formulaire = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-firstbule via-secondule to-trithbule flex flex-col items-center justify-start text-white overflow-hidden shadow-2xl">
+    <div id='all7' className="bg-gradient-to-r from-firstbule via-secondule to-trithbule flex flex-col items-center justify-start text-white overflow-hidden shadow-2xl">
       <div className="flex items-center justify-center mt-10">
-        <Image src={callcenter} className="w-80" alt="Startup" objectFit="contain" />
-        <h1 className="text-5xl text-white font-arabic">&nbsp;بغيت نخدم مع</h1>
+        <Image id='ca' src={callcenter} className="w-80" alt="Startup" objectFit="contain" />
+        <h1 id="tit11" className="text-5xl text-white font-arabic">&nbsp;بغيت نخدم مع</h1>
       </div>
-      <form onSubmit={sendMail}>
-        <div className="flex justify-center items-center mr-24 mt-10 ">
-          <div className="relative">
+      <form  id='form2' onSubmit={sendMail}>
+        <div id='forms1' className="flex justify-center items-center mr-24 mt-10 ">
+          <div id='into' className="relative">
             <input
+            id='inp'
               type="text"
               className="ml-20 pl-10 pr-10 py-2 border text-black rounded-md font-arabic focus:border-gray-400"
               style={{ direction: 'rtl' }}
@@ -59,10 +60,11 @@ const Formulaire = () => {
                 setNumtelephone(e.target.value);
               }}
             />
-            <FaPhone className="absolute top-1/2 transform -translate-y-1/2 right-4 text-black" />
+            <FaPhone id='into1' className="absolute top-1/2 transform -translate-y-1/2 right-4 text-black" />
           </div>
           <div className=" relative">
             <input
+            id='inp1'
               type="text"
               className="ml-20 pl-10 pr-10 py-2 border text-black rounded-md font-arabic focus:border-gray-400"
               style={{ direction: 'rtl' }}
@@ -72,24 +74,13 @@ const Formulaire = () => {
                 setName(e.target.value);
               }}
             />
-            <FaUser className="absolute top-1/2 transform -translate-y-1/2 right-4 text-black" />
+            <FaUser id='into1' className="absolute top-1/2 transform -translate-y-1/2 right-4 text-black" />
           </div>
         </div>
-        <div className="mt-8 mr-24 flex">
+        <div id='forms1' className="mt-8 mr-24 flex">
           <div className=" relative">
-            <input
-              type="number"
-              className="ml-20 pl-10 pr-10 py-2 border text-black rounded-md font-arabic focus:border-gray-400"
-              style={{ direction: 'rtl' }}
-              placeholder="عدد الطلبيات اليومية"
-              value={nbcommands}
-              onChange={(e) => {
-                setNbcommands(e.target.value);
-              }}
-            />
-          </div>
-          <div className=" relative">
-            <input
+          <input
+                id='inp6'
               type="email"
               className="ml-20 pl-10 pr-10 py-2 border text-black rounded-md font-arabic focus:border-gray-400"
               style={{ direction: 'rtl' }}
@@ -99,11 +90,25 @@ const Formulaire = () => {
                 setEmail(e.target.value);
               }}
             />
-            <FaEnvelope className="absolute top-1/2 transform -translate-y-1/2 right-4 text-black" />
+                   <FaEnvelope id='into2' className="absolute top-1/2 transform -translate-y-1/2 right-4 text-black" />
+          </div>
+          <div className=" relative">
+          <input
+              id='inp2'
+              type="number"
+              className="ml-20 pl-10 pr-10 py-2 border text-black rounded-md font-arabic focus:border-gray-400"
+              style={{ direction: 'rtl' }}
+              placeholder="عدد الطلبيات اليومية"
+              value={nbcommands}
+              onChange={(e) => {
+                setNbcommands(e.target.value);
+              }}
+            />
+
           </div>
         </div>
         <div>
-          <button type="submit" className="flex-1 mt-9 ml-56 text-center w-80 py-2 rounded-lg bg-amber-600 font-arabic">
+          <button id='irsal' type="submit" className="flex-1 mt-9 ml-56 text-center w-80 py-2 rounded-lg bg-amber-600 font-arabic">
             إرسال
           </button>
         </div>
