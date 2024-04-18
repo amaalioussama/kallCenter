@@ -169,22 +169,23 @@ font-size: x-large;
 }
 
 #tit2 {
-  font-size: 1rem;
+  font-size: small;
   margin-bottom: 0.5rem;
   position: absolute;
-  margin-left: 11rem;
+  margin-left: 13rem;
 
 }
 #tit3 {
-  margin-left: 26rem;
-  font-size: 1rem;
+  
+  margin-left: 24rem;
+  font-size: small;
   margin-bottom: 0.5rem;
   position: absolute;
 
 }
 #par1 {
   margin-top: 5rem;
-  margin-right: 8rem;
+  margin-right: 5rem;
   font-size: x-large;
   margin-left: 0; 
 }
@@ -202,24 +203,23 @@ margin-left: 3rem;
 }
 
 #stat1{
-  height: 12rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
   margin-right: 3rem;
 }
 #tit4{
 
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    position: absolute;
-    margin-left: -20rem;
+  font-size: small;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  margin-left: -17rem;
   
 }
 #tit5{
-
-  font-size: 1rem;
+  margin-left: 6rem;
+  font-size: small;
   margin-bottom: 0.5rem;
   position: absolute;
-  margin-left: 10rem;
 
 }
 #par2 {
@@ -239,7 +239,7 @@ margin-left: 3rem;
  }
  #par4{
   margin-top:-120px;
-  margin-left: 32rem;
+  margin-left: 28rem;
   margin-right: 23rem;
   font-size: x-large;
 
@@ -253,12 +253,13 @@ margin-left: 3rem;
   width: 8rem;
 }
 #ca{
-  margin-top: 10px;
-  height: 2rem;
+  margin-top: 8px;
+  height: 32px;
   width: 13rem;
 }
 #tit11{
-  font-size: 2rem;
+  margin-top: 1rem;
+  font-size: 26px;
   display: block;
 }
 
