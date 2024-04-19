@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
 const Cardactive = () => {
   
   return (
-    <div className="bg-white" >
+    <div className="bg-white" id="all5" >
       
       <div id="all4" className="flex items-center justify-center mt-12 ml-36 max-w-5xl">
-       <div id="all4" >
+       <div id="all4" className="flex items-center justify-center mt-12 ml-36 max-w-5xl" >
        <motion.div
            id="rounded11"
   animate={{ x: 40 }}
