@@ -3,6 +3,9 @@
 
 @media only screen and (max-width: 650px) {
 
+  #all5{
+    overflow: hidden;
+  }
   #butnav{
     margin-right: 1rem;
     height: 3rem;
@@ -10,7 +13,7 @@
     width: 7rem;
   }
   #all8{
-
+    overflow: hidden;
     height: 50rem;
   }
   #persondiv {
