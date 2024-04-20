@@ -1,13 +1,25 @@
-"use client";
+"use client"
+
 import Image from "next/image";
 import casque from "../../public/casque.png";
-import React from "react";
-import { motion, useAnimation } from "framer-motion";
-
-// import Video from 'next-video';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import ReactPlayer from 'react-player'
+import playIcon from "../../public/pause.png";
 
 const Workmethode = () => {
- 
+  const [isPlaying, setIsPlaying] = useState(false);
+    const [isVideoEnded, setIsVideoEnded] = useState(false);
+
+    const handlePlayClick = () => {
+        setIsPlaying(true);
+        setIsVideoEnded(false);
+    };
+
+    const handleVideoEnd = () => {
+        setIsPlaying(false);
+        setIsVideoEnded(true);
+    };
 
   return (
     <div id="all2" className="bg-gradient-to-r from-firstbule via-secondule to-trithbule flex items-center justify-center text-white relative overflow-hidden shadow-2xl" style={{ height: "850px" }}>
@@ -108,23 +120,43 @@ const Workmethode = () => {
               </motion.div>
             </div>
           </div>
-          <div className="mt-28 w-full flex justify-between">
-            {/* <motion.div 
-               animate={{ y: 100 }}
-               initial={{ y: 50 }} 
-               whileInView={{ y: 0 }}
-               transition={{ ease: "easeOut",duration: 0.5 }} className=" mb-7 h-36 mt-4 w-5/6 relative">
-            <Video src={videot} />
-   
-            </motion.div> */}
-            
+          <div id="vd" className="mt-28 w-full flex justify-between">
+          <motion.div
+                        animate={{ y: 100 }}
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ ease: "easeOut", duration: 0.5 }}
+                        className="mb-7 h-36 mt-4 w-5/6 relative"
+                        id="vd1"
+                    >
+                       
+                        {!isPlaying && (
+                            <button onClick={handlePlayClick} className="absolute top-36 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 10 }}>
+                                <Image id="bbtn"  src={playIcon} alt="Play Video" width={50} height={50} />
+                            </button>
+                        )}
+                        
+                     
+                        <div id="vd2" style={{ marginTop: '1rem', marginRight:'2rem', borderRadius: '25px', overflow: 'hidden' }}>
+                            <ReactPlayer
+                           
+                                url="videos/videe.mp4"
+                                controls
+                                playing={isPlaying}
+                                onEnded={handleVideoEnd}
+                                height="250px"
+                                width="450px"
+                            />
+                        </div>
+                    </motion.div> 
+
             <motion.div  
            id="beftit"
                animate={{ y: 100 }}
                initial={{ y: 50 }} 
                whileInView={{ y: 0 }}
                transition={{ ease: "easeOut",duration: 0.5 }} className="text-4xl ml-9 mt-20 flex flex-col items-center" >
-            <h1  id="tit" className="text-5xl mt-4 whitespace-nowrap font-arabic" style={{ direction: 'rtl' ,marginLeft : '' }}> تفرج فالفيديو باش <br/> <br/>تفهم مزيان</h1>
+            <h1  id="tith" className="text-5xl mt-4 whitespace-nowrap font-arabic" style={{ direction: 'rtl' ,marginLeft : '' }}> تفرج فالفيديو باش <br/> <br/>تفهم مزيان</h1>
            
             </motion.div>
           </div>

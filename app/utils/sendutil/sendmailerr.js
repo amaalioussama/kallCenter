@@ -1,8 +1,7 @@
-
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
     user: process.env.NEXT_PUBLIC_EMAIL_USERNAME,
     pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
@@ -11,10 +10,10 @@ const transporter = nodemailer.createTransport({
 
 export async function Sendmail(email, name, numtelephone, nbcommands) {
   try {
-    const info = await transporter.sendMail({
+    await transporter.sendMail({
       from: `"Kall Center Website" ${process.env.NEXT_PUBLIC_EMAIL_USERNAME}`,
-      to: 'amaaliousama771@gmail.com',  
-      subject: ' Kall Center',
+      to: process.env.NEXT_PUBLIC_EMAIL,
+      subject: " Kall Center",
       html: `
         <p>name : ${name}</p>
         <p>email : ${email}</p>

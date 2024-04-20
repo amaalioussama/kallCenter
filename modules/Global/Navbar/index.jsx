@@ -8,7 +8,7 @@ export default function Navbar() {
         <Image src={next} width={176} height={24} alt="Startup" />
       </div>
       <button id="butnav" className="bg-amber-600 h-12 mt-4 md:h-12 w-24 md:w-32 rounded-lg md:justify-between items-center justify-center sm:justify-between">
-        <span className="text-sm md:text-lg text-white font-arabic">تسجل دابا</span>
+      <span className="text-sm md:text-lg text-white font-arabic">تسجل دابا</span>
       </button>
     </div>
   );
