@@ -1,11 +1,12 @@
 import Image from "next/image";
 import startup from "../../public/dzonexp.png";
-import Marquee from "react-fast-marquee";
 import amex from "../../public/amex.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Import Swiper CSS
+import 'swiper/css';
+import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const Sclivraison = () => {
   return (
@@ -13,29 +14,21 @@ const Sclivraison = () => {
       <div className="mt-9">
         <h1 id="tit" className="text-center text-5xl font-arabic mt-9 text-firstbule">شركات التوصيل الشريكة</h1>
       </div>
-      <div className="mt-12 flex">
+      <div className="mt-12">
         <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={50}
-          slidesPerView={3}
-          loop={true} 
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          slidesPerView={1} // Display one slide at a time
+          autoplay={{ delay: 2000 }} // Autoplay with a delay of 2000ms
+          loop={true} // Enable looping
+          className="flex justify-between"
         >
-          <SwiperSlide><Image src={startup} className="h-14 w-32"alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain"/></SwiperSlide>
-          <SwiperSlide><Image src={startup} className="h-14 w-32"  objectFit="contain"  alt="Startup Logo" id="startup"  /></SwiperSlide>
-             <SwiperSlide><Image src={amex} className="h-14 w-32" alt="Startup Logo" id="startup" /></SwiperSlide>
-
+          <SwiperSlide>
+            <Image src={startup} className=" ml-72 h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src={amex} className="  ml-72 h-14 w-32" alt="Startup Logo" id="startup" objectFit="contain" />
+          </SwiperSlide>
         </Swiper>
       </div>
       <div className="bg-white h-11"></div>
